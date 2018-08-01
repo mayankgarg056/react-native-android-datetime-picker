@@ -1,0 +1,35 @@
+{
+  "name": "react-native-android-datetime-picker",
+  "version": "0.0.1",
+  "private": false,
+  "main": "index.js",
+  "description": "A react-native datetime-picker for Android same as IOS ",
+  "scripts": {
+    "lint": "eslint src",
+    "precommit": "lint-staged",
+    "test": "npm run lint",
+    "prettier": "prettier --write all src/**/*.js",
+    "reset": "watchman watch-del-all && rm -rf node_modules/ && npm cache clean && npm prune && yarn cache clean"
+  },
+  "dependencies": {
+    "react": "16.3.1",
+    "react-native": "0.55.4"
+  },
+  "keywords": [
+    "react-native",
+    "react",
+    "native",
+    "android",
+    "DateTime",
+    "picker",
+    "Same IOS",
+    "ios"
+  ],
+  "author": "Mayank Garg",
+  "license": "ISC",
+  "homepage": "https://github.com/mmazzarolo/react-native-modal-datetime-picker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmazzarolo/react-native-modal-datetime-picker"
+  }
+}
