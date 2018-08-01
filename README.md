@@ -1,5 +1,5 @@
 ## React Native Android Location Services Dialog Box
-<img width="274px" align="right" src="https://raw.githubusercontent.com/webyonet/react-native-android-location-services-dialog-box/master/demo.gif" />
+<img width="274px" align="right" src="https://github.com/mayankgarg056/react-native-android-datetime-picker/blob/master/datetimePicker.gif" />
 
 A react-native component for show the Date and time picker same as IOS in react-native android
 
@@ -10,19 +10,29 @@ A react-native component for show the Date and time picker same as IOS in react-
 
 ```
 Add a “library” module in your project using this step. 
-    a.) Open your current running project in Android Studio
-	b.) Go to File > Import Module and import the library as a module
-	c.) Right-click your app in project view and select "Open Module Settings"
-	d.) Click the "Dependencies" tab and then the '+' button
-	e.) Select "Module Dependency”.
+  
 ```
 
+### Manual installation 
+ 
+ ``` Setting.gradle
++ include ':react-native-android-datetime-picker'
++ project(':react-native-android-datetime-picker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-datetime-picker/android')
+  include ':app'
+ ```
 
+``` build.gradle
+ + compile 'com.brucetoo.pickview:library:1.2.3'
+```
+
+``` MainApplication.java
+ new DateTimePickerPackage()
+```
 
 ### Usage
 
 ```javascript
-var DateTimePickerModule= NativeModules.DateTimePickerModule;
+import DateTimePickerModule from 'react-native-android-datetime-picker'
 
  openDatePicker=()=>{
         DateTimePickerModule.openDatePicker({
@@ -73,6 +83,8 @@ var DateTimePickerModule= NativeModules.DateTimePickerModule;
 |`selectDate`                        |`String`         |`current date`   |selected date to show on top|front
 
 
+
+
 ### Props for TimePicker
 
 | Prop                              | Type        | Default     | Description                                                                              |
@@ -80,8 +92,10 @@ var DateTimePickerModule= NativeModules.DateTimePickerModule;
 |`colorConfirm`                      |`String`       |`#303F9F`          |Confirm button text color                                                               
 |`colorCancel`                       |`String`       |`#999999`          |Cancel button text color                                                                
 |`textConfirm`                       |`String`        |`Confirm`         |Confirm text string                                                          
-|`textCancel`                        |`String`        |`Cancel`          |Cancel text string  
+|`textCancel`                        |`String`        |`Cancel`          |Cancel text string 
 
 |`btnTextSize`                       |`int`           |`16`              |Button text size  
+
+
 
 
