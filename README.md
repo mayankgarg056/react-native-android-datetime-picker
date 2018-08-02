@@ -8,7 +8,7 @@ A react-native component for show the Date and time picker same as IOS in react-
 
 ```
   npm install react-native-android-datetime-picker --save
-  
+
 ```
 **android**
 
@@ -24,7 +24,6 @@ A react-native component for show the Date and time picker same as IOS in react-
 
 ### build.gradle
 ``` 
- + compile 'com.brucetoo.pickview:library:1.2.3'
  + compile project(':react-native-android-datetime-picker')
 ```
 
