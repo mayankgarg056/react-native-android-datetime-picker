@@ -6,26 +6,30 @@ A react-native component for show the Date and time picker same as IOS in react-
 
 ### Installation
 
-**android**
-
 ```
-Add a “library” module in your project using this step. 
+  npm install react-native-android-datetime-picker --save
   
 ```
+**android**
+
 
 ### Manual installation 
  
- ``` Setting.gradle
+ ### Setting.gradle
+ ``` 
 + include ':react-native-android-datetime-picker'
 + project(':react-native-android-datetime-picker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-datetime-picker/android')
-  include ':app'
+  
  ```
 
-``` build.gradle
+### build.gradle
+``` 
  + compile 'com.brucetoo.pickview:library:1.2.3'
+ + compile project(':react-native-android-datetime-picker')
 ```
 
-``` MainApplication.java
+### MainApplication.java
+``` 
  new DateTimePickerPackage()
 ```
 
@@ -73,14 +77,11 @@ import DateTimePickerModule from 'react-native-android-datetime-picker'
 |`colorCancel`                       |`String`       |`#999999`          |Cancel button text color                                                                
 |`textConfirm`                       |`String`        |`Confirm`         |Confirm text string                                                          
 |`textCancel`                        |`String`        |`Cancel`          |Cancel text string  
-
 |`btnTextSize`                       |`int`           |`16`              |Button text size  
-
 |`minYear`                           |`int`           |`1900`            |minimum year to show in calender
-
 |`maxYear`                           |`int`            |`current year`   |Maximum year to show in calender  
-
 |`selectDate`                        |`String`         |`current date`   |selected date to show on top|front
+
 
 
 
@@ -93,7 +94,6 @@ import DateTimePickerModule from 'react-native-android-datetime-picker'
 |`colorCancel`                       |`String`       |`#999999`          |Cancel button text color                                                                
 |`textConfirm`                       |`String`        |`Confirm`         |Confirm text string                                                          
 |`textCancel`                        |`String`        |`Cancel`          |Cancel text string 
-
 |`btnTextSize`                       |`int`           |`16`              |Button text size  
 
 
