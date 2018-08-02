@@ -36,8 +36,9 @@ A react-native component for show the Date and time picker same as IOS in react-
 
 ```javascript
 import DateTimePickerModule from 'react-native-android-datetime-picker'
-
- openDatePicker=()=>{
+```
+### DatePicker
+```
         DateTimePickerModule.openDatePicker({
           textConfirm:"Ok", // text for confirm button deafult is "Confirm"
           textCancel:"No", // text for cancel button deafult is "Cancel"
@@ -51,9 +52,9 @@ import DateTimePickerModule from 'react-native-android-datetime-picker'
         alert(result.date)// "result":{"year":2015,"month":03,"day":23,"date":"2015-03-23"} in success after select on confirm button
       });
   
-    }
-    openTimePicker=()=>{
-  
+```  
+  ### TimePicker
+  ```
       DateTimePickerModule.openTimePicker({
         textConfirm:"Ok", // text for confirm button deafult is "Confirm"
         textCancel:"No", // text for cancel button deafult is "Cancel"
@@ -63,9 +64,9 @@ import DateTimePickerModule from 'react-native-android-datetime-picker'
       }).then(function(result) {
         alert(result.time)// "result":{"hour":01,"minute":56,"AM_PM":"AM","time":"01:56 AM"} in success after select on confirm button
       });
-    }
-```
+    
 
+```
 
 
 ### Props for DatePicker
